@@ -8,7 +8,7 @@ st.markdown('''* Fédération Internationale de Football Association: the intern
 st.markdown ('''*  211 men's national football teams affiliated to FIFA, through their national football associations.''')
 st.markdown('''* Here is the source of data! ''')
 st.write("check out [Kaggle](https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database)")
-df = pd.read_csv(r"c:\Users\ooo\Downloads\Project 12_FIFA EDA\fifa_eda.csv")
+df = pd.read_csv(r"fifa_eda.csv")
 df.dropna(inplace = True)
 selection = st.selectbox('select a field ', ['ID', 'Name', 'Age', 'Nationality', 'Overall', 'Potential', 'Club',
        'Value', 'Wage', 'Preferred Foot', 'International Reputation',
